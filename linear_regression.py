@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
+#Note: Linear Regression is currently using things that mix both Youtube & Spotify features. We just got to alter the irrelevant columns section in data cleaning.
+
 class MyLinearRegression:
     def __init__(self, filepath):
         self.X = None
