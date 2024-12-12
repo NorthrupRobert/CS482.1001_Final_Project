@@ -1,16 +1,12 @@
 import matplotlib.pyplot as plt
 
 def plot_r2_scores(model_names, train_r2_scores, test_r2_scores):
-    # Seaborn style grid
     plt.style.use('seaborn-v0_8-whitegrid')
 
-    # Plotting the R2 Scores for different models using line plot
     plt.figure(figsize=(10, 6))
 
-    # Plotting the training R² scores
     plt.plot(model_names, train_r2_scores, marker='o', label='Training R²', color='b', linestyle='-', markersize=8)
     
-    # Plotting the testing R² scores
     plt.plot(model_names, test_r2_scores, marker='o', label='Testing R²', color='r', linestyle='-', markersize=8)
     
     plt.xlabel('Model')
